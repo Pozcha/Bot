@@ -1,0 +1,15 @@
+{
+  "name": "1",
+  "version": "2",
+  "description": "3",
+  "main": "4",
+  "repository": "5",
+  "author": "6",
+  "license": "7",
+  "private": false,
+  "dependencies": {
+    "axios": "^0.26.1",
+    "http-graceful-shutdown": "^3.1.7",
+    "node-telegram-bot-api": "^0.56.0"
+  }
+}
