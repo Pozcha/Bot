@@ -2,7 +2,7 @@ const TelegramBot = require('node-telegram-bot-api');
 const gracefulShutdown = require('http-graceful-shutdown');
 const axios = require('axios');
 
-const TELEGRAM_API_KEY = '5253160548:AAHgYe2ZSHzevteKwNmKmHYaerAZsOcXow4';
+const TELEGRAM_API_KEY = '5253160548:AAHgYe2ZSHzevteKwNmKmHYaerAZsOc****';
 const YA_API_KEY = 'AQVN2zCbDWhnbp-Pcfx14-yYn1ORi8k3VDq4x-gX';
 
 const bot = new TelegramBot(TELEGRAM_API_KEY, {polling: true});
