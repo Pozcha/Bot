@@ -26,21 +26,12 @@ bot.on('voice', (msg) => {
         axios(axiosConfig)
         .then((response) => {
             const command = response.data.result;
-            if (command == 'Выключи компьютер') {
-
-                function shutdownFunction(signal) {
-                    return new ((resolve) => {
-                      console.log('... called signal: ' + signal);
-                      console.log('... in cleanup')
-                      setTimeout(function() {
-                        console.log('... cleanup finished');
-                        resolve();
-                      }, 1000)
-                    });
-                  }
+            if (command == 'Выключи компьютер')
                   
-                
                 bot.sendMessage(msg.chat.id, 'Компьютер сейчас будет выключен!')
+
+                    exec('shutdown /s') 
+            
             }
         })
 
